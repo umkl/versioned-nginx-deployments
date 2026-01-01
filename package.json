@@ -1,0 +1,14 @@
+{
+  "scripts": {
+    "ship": "tsx scripts/deploy.ts",
+    "retrieve": "tsx scripts/retrieve.ts"
+  },
+  "dependencies": {
+    "ssh2": "^1.17.0",
+    "typescript": "^5.9.3"
+  },
+  "devDependencies": {
+    "@types/node": "^24.10.1",
+    "tsx": "^4.20.6"
+  }
+}
