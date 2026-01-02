@@ -1,13 +1,12 @@
 {
   "scripts": {
-    "ship": "tsx scripts/deploy.ts",
-    "retrieve": "tsx scripts/retrieve.ts"
+    "ship": "tsx --env-file=.env src/deploy.ts"
   },
   "dependencies": {
-    "ssh2": "^1.17.0",
-    "typescript": "^5.9.3"
+    "ssh2": "^1.17.0"
   },
   "devDependencies": {
+    "typescript": "^5.9.3",
     "@types/node": "^24.10.1",
     "tsx": "^4.20.6"
   }

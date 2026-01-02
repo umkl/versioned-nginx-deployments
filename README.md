@@ -1,17 +1,9 @@
-# blog
+# Versioned Nginx Deployments
 
-This repository contains the blog content itself as well as the tools to update the serving host - no CMS, no WYSIWYG, no external sources. 
+Copies the files from the dist folder over to the remote server defined using env vars. Creates a folder there for rollbacks. 
 
-## rules
+## Versioning
 
-The content is structured in a very straightforward way, adhering to basic html semantics. 
+Moves the dist files into a folder according to this format on the remote server: `/var/www/${project_name}/releases/${date_time}/`.
 
-The structure for new blogs items looks like this:
-
-`html > main > article`
-
-An article consists of these elements:
-`h2` - Topic of the Blog.
-`p` - Subheading containing a TLDR. 
-`time` - Information about the Creation Date of the Blog.
-`p` - Actual content of the blog.
+Creates a symlink to the latest deployment in the folder `/var/www/current`.
