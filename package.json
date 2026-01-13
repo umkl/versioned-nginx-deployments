@@ -1,6 +1,7 @@
 {
   "scripts": {
-    "ship": "tsx --env-file=.env src/deploy.ts"
+    "ship": "tsx --env-file=.env src/ship.ts",
+    "pull": "tsx --env-file=.env src/pull.ts"
   },
   "dependencies": {
     "ssh2": "^1.17.0"

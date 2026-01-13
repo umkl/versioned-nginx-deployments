@@ -98,7 +98,7 @@ export async function deployDistViaScp(
 
 async function main() {
   const deployConfig: SimpleDeployConfig = {
-    sshHost: process.env.BLOG_HOST,
+    sshHost: process.env.BLOG_HOST as string,
     localDistPath: "./dist",
     remoteBasePath: "/var/www",
     projectName: "blog",
